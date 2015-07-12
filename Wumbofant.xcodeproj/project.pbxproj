@@ -13,6 +13,7 @@
 		F4C6931C1B52A28100074276 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C6931B1B52A28100074276 /* Images.xcassets */; };
 		F4C6931F1B52A28100074276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C6931D1B52A28100074276 /* Main.storyboard */; };
 		F4C6932B1B52A28100074276 /* WumbofantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C6932A1B52A28100074276 /* WumbofantTests.swift */; };
+		F4CBA8211B52B76A0051C6BB /* CSVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA8201B52B76A0051C6BB /* CSVLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F4C693241B52A28100074276 /* WumbofantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WumbofantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C693291B52A28100074276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C6932A1B52A28100074276 /* WumbofantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WumbofantTests.swift; sourceTree = "<group>"; };
+		F4CBA8201B52B76A0051C6BB /* CSVLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				F4C6931D1B52A28100074276 /* Main.storyboard */,
 				F4C693181B52A28100074276 /* Wumbofant.xcdatamodeld */,
 				F4C693121B52A28100074276 /* Supporting Files */,
+				F4CBA8201B52B76A0051C6BB /* CSVLoader.swift */,
 			);
 			path = Wumbofant;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C6931A1B52A28100074276 /* Wumbofant.xcdatamodeld in Sources */,
+				F4CBA8211B52B76A0051C6BB /* CSVLoader.swift in Sources */,
 				F4C693171B52A28100074276 /* ViewController.swift in Sources */,
 				F4C693151B52A28100074276 /* AppDelegate.swift in Sources */,
 			);
@@ -404,6 +408,7 @@
 				F4C693301B52A28100074276 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4C693311B52A28100074276 /* Build configuration list for PBXNativeTarget "WumbofantTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +417,7 @@
 				F4C693331B52A28100074276 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

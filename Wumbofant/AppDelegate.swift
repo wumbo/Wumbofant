@@ -10,11 +10,21 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
+    
+    var csvLoader: CSVLoader?
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        // Show an open file dialog to select a CSV file
+        var fileChooser: NSOpenPanel = NSOpenPanel()
+        fileChooser.canChooseFiles = true
+        fileChooser.canChooseDirectories = false
+        fileChooser.allowsMultipleSelection = false
+        fileChooser.allowedFileTypes = ["csv"]
+        fileChooser.beginSheetModalForWindow(NSApplication.sharedApplication().windows.first as! NSWindow, completionHandler: { (i) -> Void in
+            if let url = fileChooser.URL {
+                self.csvLoader = CSVLoader(url: url)
+            }
+        })
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
