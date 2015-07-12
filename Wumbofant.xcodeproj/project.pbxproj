@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4C693151B52A28100074276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C693141B52A28100074276 /* AppDelegate.swift */; };
+		F4C693171B52A28100074276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C693161B52A28100074276 /* ViewController.swift */; };
+		F4C6931A1B52A28100074276 /* Wumbofant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4C693181B52A28100074276 /* Wumbofant.xcdatamodeld */; };
+		F4C6931C1B52A28100074276 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C6931B1B52A28100074276 /* Images.xcassets */; };
+		F4C6931F1B52A28100074276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C6931D1B52A28100074276 /* Main.storyboard */; };
+		F4C6932B1B52A28100074276 /* WumbofantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C6932A1B52A28100074276 /* WumbofantTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4C693251B52A28100074276 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4C693071B52A28100074276 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4C6930E1B52A28100074276;
+			remoteInfo = Wumbofant;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4C6930F1B52A28100074276 /* Wumbofant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wumbofant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C693131B52A28100074276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C693141B52A28100074276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4C693161B52A28100074276 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4C693191B52A28100074276 /* Wumbofant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wumbofant.xcdatamodel; sourceTree = "<group>"; };
+		F4C6931B1B52A28100074276 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F4C6931E1B52A28100074276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4C693241B52A28100074276 /* WumbofantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WumbofantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C693291B52A28100074276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C6932A1B52A28100074276 /* WumbofantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WumbofantTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4C6930C1B52A28100074276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C693211B52A28100074276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4C693061B52A28100074276 = {
+			isa = PBXGroup;
+			children = (
+				F4C693111B52A28100074276 /* Wumbofant */,
+				F4C693271B52A28100074276 /* WumbofantTests */,
+				F4C693101B52A28100074276 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4C693101B52A28100074276 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4C6930F1B52A28100074276 /* Wumbofant.app */,
+				F4C693241B52A28100074276 /* WumbofantTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4C693111B52A28100074276 /* Wumbofant */ = {
+			isa = PBXGroup;
+			children = (
+				F4C693141B52A28100074276 /* AppDelegate.swift */,
+				F4C693161B52A28100074276 /* ViewController.swift */,
+				F4C6931B1B52A28100074276 /* Images.xcassets */,
+				F4C6931D1B52A28100074276 /* Main.storyboard */,
+				F4C693181B52A28100074276 /* Wumbofant.xcdatamodeld */,
+				F4C693121B52A28100074276 /* Supporting Files */,
+			);
+			path = Wumbofant;
+			sourceTree = "<group>";
+		};
+		F4C693121B52A28100074276 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4C693131B52A28100074276 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4C693271B52A28100074276 /* WumbofantTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4C6932A1B52A28100074276 /* WumbofantTests.swift */,
+				F4C693281B52A28100074276 /* Supporting Files */,
+			);
+			path = WumbofantTests;
+			sourceTree = "<group>";
+		};
+		F4C693281B52A28100074276 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4C693291B52A28100074276 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4C6930E1B52A28100074276 /* Wumbofant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C6932E1B52A28100074276 /* Build configuration list for PBXNativeTarget "Wumbofant" */;
+			buildPhases = (
+				F4C6930B1B52A28100074276 /* Sources */,
+				F4C6930C1B52A28100074276 /* Frameworks */,
+				F4C6930D1B52A28100074276 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wumbofant;
+			productName = Wumbofant;
+			productReference = F4C6930F1B52A28100074276 /* Wumbofant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4C693231B52A28100074276 /* WumbofantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C693311B52A28100074276 /* Build configuration list for PBXNativeTarget "WumbofantTests" */;
+			buildPhases = (
+				F4C693201B52A28100074276 /* Sources */,
+				F4C693211B52A28100074276 /* Frameworks */,
+				F4C693221B52A28100074276 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4C693261B52A28100074276 /* PBXTargetDependency */,
+			);
+			name = WumbofantTests;
+			productName = WumbofantTests;
+			productReference = F4C693241B52A28100074276 /* WumbofantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4C693071B52A28100074276 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Simon Crequer";
+				TargetAttributes = {
+					F4C6930E1B52A28100074276 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F4C693231B52A28100074276 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F4C6930E1B52A28100074276;
+					};
+				};
+			};
+			buildConfigurationList = F4C6930A1B52A28100074276 /* Build configuration list for PBXProject "Wumbofant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4C693061B52A28100074276;
+			productRefGroup = F4C693101B52A28100074276 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4C6930E1B52A28100074276 /* Wumbofant */,
+				F4C693231B52A28100074276 /* WumbofantTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4C6930D1B52A28100074276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C6931C1B52A28100074276 /* Images.xcassets in Resources */,
+				F4C6931F1B52A28100074276 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C693221B52A28100074276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4C6930B1B52A28100074276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C6931A1B52A28100074276 /* Wumbofant.xcdatamodeld in Sources */,
+				F4C693171B52A28100074276 /* ViewController.swift in Sources */,
+				F4C693151B52A28100074276 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C693201B52A28100074276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C6932B1B52A28100074276 /* WumbofantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4C693261B52A28100074276 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4C6930E1B52A28100074276 /* Wumbofant */;
+			targetProxy = F4C693251B52A28100074276 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4C6931D1B52A28100074276 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C6931E1B52A28100074276 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4C6932C1B52A28100074276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4C6932D1B52A28100074276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F4C6932F1B52A28100074276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Wumbofant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F4C693301B52A28100074276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Wumbofant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F4C693321B52A28100074276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WumbofantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wumbofant.app/Contents/MacOS/Wumbofant";
+			};
+			name = Debug;
+		};
+		F4C693331B52A28100074276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WumbofantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wumbofant.app/Contents/MacOS/Wumbofant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4C6930A1B52A28100074276 /* Build configuration list for PBXProject "Wumbofant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C6932C1B52A28100074276 /* Debug */,
+				F4C6932D1B52A28100074276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C6932E1B52A28100074276 /* Build configuration list for PBXNativeTarget "Wumbofant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C6932F1B52A28100074276 /* Debug */,
+				F4C693301B52A28100074276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F4C693311B52A28100074276 /* Build configuration list for PBXNativeTarget "WumbofantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C693321B52A28100074276 /* Debug */,
+				F4C693331B52A28100074276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F4C693181B52A28100074276 /* Wumbofant.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F4C693191B52A28100074276 /* Wumbofant.xcdatamodel */,
+			);
+			currentVersion = F4C693191B52A28100074276 /* Wumbofant.xcdatamodel */;
+			path = Wumbofant.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F4C693071B52A28100074276 /* Project object */;
+}
