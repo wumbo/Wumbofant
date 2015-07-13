@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F405D6B91B53E68C005F99E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C6931B1B52A28100074276 /* Images.xcassets */; };
 		F4C693151B52A28100074276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C693141B52A28100074276 /* AppDelegate.swift */; };
 		F4C693171B52A28100074276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C693161B52A28100074276 /* ViewController.swift */; };
 		F4C6931A1B52A28100074276 /* Wumbofant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4C693181B52A28100074276 /* Wumbofant.xcdatamodeld */; };
-		F4C6931C1B52A28100074276 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C6931B1B52A28100074276 /* Images.xcassets */; };
 		F4C6931F1B52A28100074276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C6931D1B52A28100074276 /* Main.storyboard */; };
 		F4C6932B1B52A28100074276 /* WumbofantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C6932A1B52A28100074276 /* WumbofantTests.swift */; };
 		F4CBA8211B52B76A0051C6BB /* CSVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA8201B52B76A0051C6BB /* CSVLoader.swift */; };
+		F4CBA8231B52BB2E0051C6BB /* CSVLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA8221B52BB2E0051C6BB /* CSVLoaderTests.swift */; };
+		F4CBA8251B534BFF0051C6BB /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA8241B534BFF0051C6BB /* LogEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		F4C693291B52A28100074276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C6932A1B52A28100074276 /* WumbofantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WumbofantTests.swift; sourceTree = "<group>"; };
 		F4CBA8201B52B76A0051C6BB /* CSVLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVLoader.swift; sourceTree = "<group>"; };
+		F4CBA8221B52BB2E0051C6BB /* CSVLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVLoaderTests.swift; sourceTree = "<group>"; };
+		F4CBA8241B534BFF0051C6BB /* LogEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +83,13 @@
 		F4C693111B52A28100074276 /* Wumbofant */ = {
 			isa = PBXGroup;
 			children = (
+				F4CBA8261B53DFAA0051C6BB /* Model */,
 				F4C693141B52A28100074276 /* AppDelegate.swift */,
 				F4C693161B52A28100074276 /* ViewController.swift */,
 				F4C6931B1B52A28100074276 /* Images.xcassets */,
 				F4C6931D1B52A28100074276 /* Main.storyboard */,
 				F4C693181B52A28100074276 /* Wumbofant.xcdatamodeld */,
 				F4C693121B52A28100074276 /* Supporting Files */,
-				F4CBA8201B52B76A0051C6BB /* CSVLoader.swift */,
 			);
 			path = Wumbofant;
 			sourceTree = "<group>";
@@ -101,6 +105,7 @@
 		F4C693271B52A28100074276 /* WumbofantTests */ = {
 			isa = PBXGroup;
 			children = (
+				F4CBA8221B52BB2E0051C6BB /* CSVLoaderTests.swift */,
 				F4C6932A1B52A28100074276 /* WumbofantTests.swift */,
 				F4C693281B52A28100074276 /* Supporting Files */,
 			);
@@ -113,6 +118,15 @@
 				F4C693291B52A28100074276 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4CBA8261B53DFAA0051C6BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4CBA8201B52B76A0051C6BB /* CSVLoader.swift */,
+				F4CBA8241B534BFF0051C6BB /* LogEntry.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4C6931C1B52A28100074276 /* Images.xcassets in Resources */,
+				F405D6B91B53E68C005F99E5 /* Images.xcassets in Resources */,
 				F4C6931F1B52A28100074276 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +232,7 @@
 				F4CBA8211B52B76A0051C6BB /* CSVLoader.swift in Sources */,
 				F4C693171B52A28100074276 /* ViewController.swift in Sources */,
 				F4C693151B52A28100074276 /* AppDelegate.swift in Sources */,
+				F4CBA8251B534BFF0051C6BB /* LogEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C6932B1B52A28100074276 /* WumbofantTests.swift in Sources */,
+				F4CBA8231B52BB2E0051C6BB /* CSVLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
