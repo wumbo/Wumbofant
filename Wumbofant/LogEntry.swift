@@ -10,14 +10,14 @@ import Foundation
 
 struct LogEntry {
     
-    var product: String
-    var project: String
-    var iteration: String
-    var story: String
-    var task: String?
-    var comment: String?
-    var user: String
-    var date: NSDate
-    var spentEffort: Float
+    var product: String = ""
+    var project: String = ""
+    var iteration: String = ""
+    var story: String = ""
+    var task: String = ""
+    var comment: String = ""
+    var user: String = ""
+    var date: NSDate = NSDate()
+    var spentEffort: Float = 0.0
     
 }
