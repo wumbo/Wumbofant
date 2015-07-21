@@ -42,6 +42,14 @@ class CSVLoader {
                 
                     var entry: LogEntry = LogEntry()
                     entry.product = items[0]
+                    entry.project = items[1]
+                    entry.iteration = items[2]
+                    entry.story = items[3]
+                    entry.task = items[4]
+                    entry.comment = items[5]
+                    entry.user = items[6]
+                    entry.date = date
+                    entry.spentEffort = NSString(string: items[8]).floatValue
                     entries.append(entry)
                 }
             }
