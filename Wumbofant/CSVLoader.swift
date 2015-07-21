@@ -19,6 +19,9 @@ class CSVLoader {
         loadEntries()
     }
     
+    /**
+    Loads the CSV file given by url and parses it into an array of LogEntry objects
+    */
     func loadEntries() {
         var error: NSError?
         var contents: String? = String(contentsOfURL: url, encoding: NSUTF8StringEncoding, error: &error)
@@ -51,6 +54,15 @@ class CSVLoader {
         return lines
     }
     
+    /**
+    Parses a line from the CSV file into an array of Strings. Rather than treating
+    every comma as a seperator, it first checks if a comma is inside "quotation
+    marks" and only treats it as a seperator if it isn't.
+    
+    :param: line    The line of CSV data to be parsed
+    
+    :returns: An array of 9 Strings containing each part of the LogEntry
+    */
     private func readLine(line: String) -> [String] {
         var values: [String] = ["","","","","","","","",""]
         var index: Int = 0
