@@ -30,8 +30,7 @@ class CSVLoader {
             println("Error fetching file contents: \(error)")
         } else if contents != nil {
             var lines: [String] = readLines(contents!)
-            if lines[1] == "Product,Project,Iteration,Story,Task,Comment,User,Date,Spent effort (hours)" {
-                lines.removeAtIndex(0)
+            if lines[0] == "Product,Project,Iteration,Story,Task,Comment,User,Date,Spent effort (hours)" {
                 lines.removeAtIndex(0)
                 for line in lines {
                     let items = readLine(line)
