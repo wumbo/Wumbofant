@@ -11,6 +11,7 @@
 		F405D6C01B5495A8005F99E5 /* sample-timesheet.csv in Resources */ = {isa = PBXBuildFile; fileRef = F405D6BF1B5495A8005F99E5 /* sample-timesheet.csv */; };
 		F405D6C21B549771005F99E5 /* CSVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA8201B52B76A0051C6BB /* CSVLoader.swift */; };
 		F405D6C31B549773005F99E5 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA8241B534BFF0051C6BB /* LogEntry.swift */; };
+		F47FB6CC1B5F3449007F5C52 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FB6CB1B5F3449007F5C52 /* WindowController.swift */; };
 		F4C693151B52A28100074276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C693141B52A28100074276 /* AppDelegate.swift */; };
 		F4C693171B52A28100074276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C693161B52A28100074276 /* ViewController.swift */; };
 		F4C6931A1B52A28100074276 /* Wumbofant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4C693181B52A28100074276 /* Wumbofant.xcdatamodeld */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		F405D6BF1B5495A8005F99E5 /* sample-timesheet.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sample-timesheet.csv"; sourceTree = "<group>"; };
+		F47FB6CB1B5F3449007F5C52 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		F4C6930F1B52A28100074276 /* Wumbofant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wumbofant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C693131B52A28100074276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C693141B52A28100074276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				F4CBA8261B53DFAA0051C6BB /* Model */,
 				F4C693141B52A28100074276 /* AppDelegate.swift */,
 				F4C693161B52A28100074276 /* ViewController.swift */,
+				F47FB6CB1B5F3449007F5C52 /* WindowController.swift */,
 				F4C6931B1B52A28100074276 /* Images.xcassets */,
 				F4C6931D1B52A28100074276 /* Main.storyboard */,
 				F4C693181B52A28100074276 /* Wumbofant.xcdatamodeld */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C6931A1B52A28100074276 /* Wumbofant.xcdatamodeld in Sources */,
+				F47FB6CC1B5F3449007F5C52 /* WindowController.swift in Sources */,
 				F4CBA8211B52B76A0051C6BB /* CSVLoader.swift in Sources */,
 				F4C693171B52A28100074276 /* ViewController.swift in Sources */,
 				F4C693151B52A28100074276 /* AppDelegate.swift in Sources */,
