@@ -21,7 +21,13 @@ class WindowController: NSWindowController, NSWindowDelegate {
         fileChooser.beginSheetModalForWindow(self.window! , completionHandler: { (i) -> Void in
             if let url = fileChooser.URL {
                 self.csvLoader = CSVLoader(url: url)
-                (self.window!.contentViewController as! ViewController).text.string = "Hello"
+                var total: Float = 0.0
+                for entry: LogEntry in self.csvLoader!.entries {
+                    if entry.user == "Simon Crequer" {
+                        total += entry.spentEffort
+                    }
+                }
+                (self.window!.contentViewController as! ViewController).text.string = toString(total)
             }
         })
     }
