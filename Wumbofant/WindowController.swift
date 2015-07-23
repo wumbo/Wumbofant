@@ -21,13 +21,46 @@ class WindowController: NSWindowController, NSWindowDelegate {
         fileChooser.beginSheetModalForWindow(self.window! , completionHandler: { (i) -> Void in
             if let url = fileChooser.URL {
                 self.csvLoader = CSVLoader(url: url)
-                var total: Float = 0.0
+                
+                // <Product, <Sprint, <User, Hours>>>
+                var sprintHours: Dictionary<String, Dictionary<String, Dictionary<String, Float>>> = Dictionary()
                 for entry: LogEntry in self.csvLoader!.entries {
-                    if entry.user == "Simon Crequer" {
-                        total += entry.spentEffort
+                    
+                    // If product is in dictionary
+                    if contains(sprintHours.keys.array, entry.product) {
+                        // If sprint is in dictionary
+                        if contains(sprintHours[entry.product]!.keys.array, entry.iteration) {
+                            // If user is in dictionary
+                            if contains(sprintHours[entry.product]![entry.iteration]!.keys.array, entry.user) {
+                                sprintHours[entry.product]![entry.iteration]![entry.user]! += entry.spentEffort
+                            } else {
+                                sprintHours[entry.product]![entry.iteration]![entry.user] = entry.spentEffort
+                            }
+                        } else {
+                            sprintHours[entry.product]![entry.iteration] = Dictionary()
+                            sprintHours[entry.product]![entry.iteration]![entry.user] = entry.spentEffort
+                        }
+                    } else {
+                        sprintHours[entry.product] = Dictionary()
+                        sprintHours[entry.product]![entry.iteration] = Dictionary()
+                        sprintHours[entry.product]![entry.iteration]![entry.user] = entry.spentEffort
                     }
                 }
-                (self.window!.contentViewController as! ViewController).text.string = toString(total)
+                
+                var output = ""
+                
+                for product in sprintHours {
+                    output += product.0 + "\n"
+                    for sprint in product.1 {
+                        output += "\t" + sprint.0 + "\n"
+                        for user in sprint.1 {
+                            output += "\t\t" + user.0 + ": "
+                            output += toString(user.1) + " hours\n"
+                        }
+                    }
+                }
+                
+                (self.window!.contentViewController as! ViewController).text.string = output
             }
         })
     }
