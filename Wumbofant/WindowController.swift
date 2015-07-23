@@ -11,8 +11,16 @@ import Cocoa
 class WindowController: NSWindowController, NSWindowDelegate {
     
     var csvLoader: CSVLoader?
+    var fileLoaded: Bool = false
     
     func windowDidBecomeMain(notification: NSNotification) {
+        if !fileLoaded {
+            openFile()
+            fileLoaded = true
+        }
+    }
+    
+    func openFile() {
         var fileChooser: NSOpenPanel = NSOpenPanel()
         fileChooser.canChooseFiles = true
         fileChooser.canChooseDirectories = false
