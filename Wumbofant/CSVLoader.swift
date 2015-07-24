@@ -19,9 +19,9 @@ class CSVLoader {
     }
     
     lazy var entries: [LogEntry] = {
-        let fetchRequest = NSFetchRequest(entityName: "LogEntry")
         let managedObjectContext = (NSApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         
+        let fetchRequest = NSFetchRequest(entityName: "LogEntry")
         let fetchResults = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as! [LogEntry]
         
         return fetchResults
