@@ -36,7 +36,7 @@
 		F405D6BF1B5495A8005F99E5 /* sample-timesheet.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sample-timesheet.csv"; sourceTree = "<group>"; };
 		F47FB6CB1B5F3449007F5C52 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		F492B41F1B60A1AC00A884AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		F492B4201B61D74500A884AF /* LogEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogEntry.swift; path = Wumbofant.xcodeproj/../LogEntry.swift; sourceTree = SOURCE_ROOT; };
+		F492B4201B61D74500A884AF /* LogEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogEntry.swift; path = Wumbofant/LogEntry.swift; sourceTree = SOURCE_ROOT; };
 		F4C6930F1B52A28100074276 /* Wumbofant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wumbofant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C693131B52A28100074276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C693141B52A28100074276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
