@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="untitled.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="LogEntry" representedClassName="Wumbofant.LogEntry" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="iteration" attributeType="String" syncable="YES"/>
+        <attribute name="product" attributeType="String" syncable="YES"/>
+        <attribute name="project" attributeType="String" syncable="YES"/>
+        <attribute name="spentEffort" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="story" attributeType="String" syncable="YES"/>
+        <attribute name="task" attributeType="String" syncable="YES"/>
+        <attribute name="user" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LogEntry" positionX="-63" positionY="-18" width="128" height="180"/>
+    </elements>
 </model>

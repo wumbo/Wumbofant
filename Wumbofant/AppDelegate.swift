@@ -10,8 +10,6 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    
-    var csvLoader: CSVLoader?
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         

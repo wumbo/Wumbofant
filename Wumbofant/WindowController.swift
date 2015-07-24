@@ -30,9 +30,14 @@ class WindowController: NSWindowController, NSWindowDelegate {
             if let url = fileChooser.URL {
                 self.csvLoader = CSVLoader(url: url)
                 
+                let fetchRequest = NSFetchRequest(entityName: "LogEntry")
+                let managedObjectContext = (NSApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+                
+                let fetchResults = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as! [LogEntry]
+                
                 // <Product, <Sprint, <User, Hours>>>
                 var sprintHours: Dictionary<String, Dictionary<String, Dictionary<String, Float>>> = Dictionary()
-                for entry: LogEntry in self.csvLoader!.entries {
+                for entry: LogEntry in fetchResults {
                     
                     // If product is in dictionary
                     if contains(sprintHours.keys.array, entry.product) {
@@ -40,18 +45,18 @@ class WindowController: NSWindowController, NSWindowDelegate {
                         if contains(sprintHours[entry.product]!.keys.array, entry.iteration) {
                             // If user is in dictionary
                             if contains(sprintHours[entry.product]![entry.iteration]!.keys.array, entry.user) {
-                                sprintHours[entry.product]![entry.iteration]![entry.user]! += entry.spentEffort
+                                sprintHours[entry.product]![entry.iteration]![entry.user]! += entry.spentEffort as Float
                             } else {
-                                sprintHours[entry.product]![entry.iteration]![entry.user] = entry.spentEffort
+                                sprintHours[entry.product]![entry.iteration]![entry.user] = entry.spentEffort as Float
                             }
                         } else {
                             sprintHours[entry.product]![entry.iteration] = Dictionary()
-                            sprintHours[entry.product]![entry.iteration]![entry.user] = entry.spentEffort
+                            sprintHours[entry.product]![entry.iteration]![entry.user] = entry.spentEffort as Float
                         }
                     } else {
                         sprintHours[entry.product] = Dictionary()
                         sprintHours[entry.product]![entry.iteration] = Dictionary()
-                        sprintHours[entry.product]![entry.iteration]![entry.user] = entry.spentEffort
+                        sprintHours[entry.product]![entry.iteration]![entry.user] = entry.spentEffort as Float
                     }
                 }
                 

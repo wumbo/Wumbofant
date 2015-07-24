@@ -9,16 +9,17 @@
 /* Begin PBXBuildFile section */
 		F405D6B91B53E68C005F99E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C6931B1B52A28100074276 /* Images.xcassets */; };
 		F405D6C01B5495A8005F99E5 /* sample-timesheet.csv in Resources */ = {isa = PBXBuildFile; fileRef = F405D6BF1B5495A8005F99E5 /* sample-timesheet.csv */; };
-		F405D6C21B549771005F99E5 /* CSVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA8201B52B76A0051C6BB /* CSVLoader.swift */; };
-		F405D6C31B549773005F99E5 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA8241B534BFF0051C6BB /* LogEntry.swift */; };
+		F44BEC9E1B61F33A001EDE57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C693141B52A28100074276 /* AppDelegate.swift */; };
+		F44BEC9F1B61F48F001EDE57 /* CSVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA8201B52B76A0051C6BB /* CSVLoader.swift */; };
+		F44BECA01B61F49C001EDE57 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F492B4201B61D74500A884AF /* LogEntry.swift */; };
+		F44BECA11B61F4A4001EDE57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C693141B52A28100074276 /* AppDelegate.swift */; };
 		F47FB6CC1B5F3449007F5C52 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FB6CB1B5F3449007F5C52 /* WindowController.swift */; };
-		F4C693151B52A28100074276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C693141B52A28100074276 /* AppDelegate.swift */; };
+		F492B4211B61D74500A884AF /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F492B4201B61D74500A884AF /* LogEntry.swift */; };
 		F4C693171B52A28100074276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C693161B52A28100074276 /* ViewController.swift */; };
 		F4C6931A1B52A28100074276 /* Wumbofant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4C693181B52A28100074276 /* Wumbofant.xcdatamodeld */; };
 		F4C6931F1B52A28100074276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C6931D1B52A28100074276 /* Main.storyboard */; };
 		F4CBA8211B52B76A0051C6BB /* CSVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA8201B52B76A0051C6BB /* CSVLoader.swift */; };
 		F4CBA8231B52BB2E0051C6BB /* CSVLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA8221B52BB2E0051C6BB /* CSVLoaderTests.swift */; };
-		F4CBA8251B534BFF0051C6BB /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBA8241B534BFF0051C6BB /* LogEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		F405D6BF1B5495A8005F99E5 /* sample-timesheet.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sample-timesheet.csv"; sourceTree = "<group>"; };
 		F47FB6CB1B5F3449007F5C52 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		F492B41F1B60A1AC00A884AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F492B4201B61D74500A884AF /* LogEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogEntry.swift; path = Wumbofant.xcodeproj/../LogEntry.swift; sourceTree = SOURCE_ROOT; };
 		F4C6930F1B52A28100074276 /* Wumbofant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wumbofant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C693131B52A28100074276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C693141B52A28100074276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +48,6 @@
 		F4C693291B52A28100074276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4CBA8201B52B76A0051C6BB /* CSVLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVLoader.swift; sourceTree = "<group>"; };
 		F4CBA8221B52BB2E0051C6BB /* CSVLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVLoaderTests.swift; sourceTree = "<group>"; };
-		F4CBA8241B534BFF0051C6BB /* LogEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				F4CBA8201B52B76A0051C6BB /* CSVLoader.swift */,
-				F4CBA8241B534BFF0051C6BB /* LogEntry.swift */,
+				F492B4201B61D74500A884AF /* LogEntry.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -253,12 +254,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44BEC9E1B61F33A001EDE57 /* AppDelegate.swift in Sources */,
 				F4C6931A1B52A28100074276 /* Wumbofant.xcdatamodeld in Sources */,
 				F47FB6CC1B5F3449007F5C52 /* WindowController.swift in Sources */,
+				F492B4211B61D74500A884AF /* LogEntry.swift in Sources */,
 				F4CBA8211B52B76A0051C6BB /* CSVLoader.swift in Sources */,
 				F4C693171B52A28100074276 /* ViewController.swift in Sources */,
-				F4C693151B52A28100074276 /* AppDelegate.swift in Sources */,
-				F4CBA8251B534BFF0051C6BB /* LogEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F405D6C21B549771005F99E5 /* CSVLoader.swift in Sources */,
-				F405D6C31B549773005F99E5 /* LogEntry.swift in Sources */,
+				F44BECA11B61F4A4001EDE57 /* AppDelegate.swift in Sources */,
 				F4CBA8231B52BB2E0051C6BB /* CSVLoaderTests.swift in Sources */,
+				F44BEC9F1B61F48F001EDE57 /* CSVLoader.swift in Sources */,
+				F44BECA01B61F49C001EDE57 /* LogEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
