@@ -13,7 +13,7 @@ class WindowController: NSWindowController, NSWindowDelegate {
     var csvLoader: CSVLoader?
     var fileLoaded: Bool = false
     
-    func windowDidBecomeMain(notification: NSNotification) {
+    override func windowDidLoad() {
         let managedObjectContext = (NSApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         
         let fetchRequest = NSFetchRequest(entityName: "LogEntry")
