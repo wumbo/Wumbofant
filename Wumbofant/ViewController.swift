@@ -46,6 +46,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     func tableViewSelectionDidChange(notification: NSNotification) {
         if sideBar.selectedRow != -1 {
             let selectedItem = self.objects.objectAtIndex(self.sideBar.selectedRow) as! String
+            text.string = selectedItem
         }
     }
 
