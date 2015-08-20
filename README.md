@@ -5,7 +5,13 @@ An app that lets your see the hours of everyone in your team at once!
 2. Click 'Export to Excel'
 3. Open Wumbofant and load the CSV file
 
-## Installation
+## Building
 1. Clone this repository
-2. Go to Releases > Current
-3. Copy the app to you Applications folder
+2. Open the project file in XCode
+3. Click the build button
+
+## Installation
+If you want to install a stable release:
+1. Go to the releases branch in Github
+2. Download a release
+3. Copy the app into your Applications folder
