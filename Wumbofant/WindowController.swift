@@ -26,6 +26,8 @@ class WindowController: NSWindowController, NSWindowDelegate {
         }
         
         showHours()
+        
+        (self.window!.contentViewController as! ViewController).updateSideBar()
     }
     
     func openFile() {

@@ -676,20 +676,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="650" height="450"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView ambiguous="YES" misplaced="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3go-mc-vjJ">
-                                <rect key="frame" x="134" y="-5" width="524" height="455"/>
-                                <clipView key="contentView" ambiguous="YES" misplaced="YES" copiesOnScroll="NO" id="xHy-nb-znt">
+                            <scrollView misplaced="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3go-mc-vjJ">
+                                <rect key="frame" x="160" y="-5" width="498" height="455"/>
+                                <clipView key="contentView" misplaced="YES" copiesOnScroll="NO" id="xHy-nb-znt">
                                     <rect key="frame" x="1" y="1" width="223" height="133"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="FbL-le-Fqr">
-                                            <rect key="frame" x="0.0" y="0.0" width="223" height="269"/>
+                                        <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="FbL-le-Fqr">
+                                            <rect key="frame" x="0.0" y="0.0" width="223" height="455"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="524" height="455"/>
+                                            <size key="minSize" width="498" height="455"/>
                                             <size key="maxSize" width="524" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="524" height="455"/>
+                                            <size key="minSize" width="498" height="455"/>
                                             <size key="maxSize" width="524" height="10000000"/>
                                         </textView>
                                     </subviews>
@@ -704,8 +704,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <textField horizontalCompressionResistancePriority="250" ambiguous="YES" misplaced="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSe-es-Nx7">
+                                <rect key="frame" x="160" y="127" width="1" height="600"/>
+                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="a ashf as f s fsj f sd fs fj s fds fdsj fdsfds fjds fjds fjds fjs fsdjf dsjf dsjf dsjf sjf sdf" drawsBackground="YES" id="9G7-0J-Qu0">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" white="0.70000000000000007" alpha="1" colorSpace="calibratedWhite"/>
+                                </textFieldCell>
+                            </textField>
                             <scrollView ambiguous="YES" misplaced="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqc-yi-LZ2">
-                                <rect key="frame" x="0.0" y="0.0" width="134" height="450"/>
+                                <rect key="frame" x="1" y="0.0" width="160" height="450"/>
                                 <clipView key="contentView" ambiguous="YES" misplaced="YES" id="ch1-Er-w6N">
                                     <rect key="frame" x="1" y="17" width="238" height="117"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -717,7 +725,7 @@
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="131" minWidth="40" maxWidth="1000" id="wPp-UI-dej">
+                                                <tableColumn width="157" minWidth="40" maxWidth="1000" id="wPp-UI-dej">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -731,11 +739,11 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView identifier="cell" id="5Tc-ft-h4M">
-                                                            <rect key="frame" x="1" y="1" width="131" height="17"/>
+                                                            <rect key="frame" x="1" y="1" width="157" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f8a-HE-LQe">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="160" height="17"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="7UM-f5-Jct">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -767,20 +775,12 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <textField horizontalCompressionResistancePriority="250" ambiguous="YES" misplaced="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSe-es-Nx7">
-                                <rect key="frame" x="134" y="127" width="1" height="600"/>
-                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="a ashf as f s fsj f sd fs fj s fds fdsj fdsfds fjds fjds fjds fjs fsdjf dsjf dsjf dsjf sjf sdf" drawsBackground="YES" id="9G7-0J-Qu0">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" white="0.70000000000000007" alpha="1" colorSpace="calibratedWhite"/>
-                                </textFieldCell>
-                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="hqc-yi-LZ2" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="IVj-vV-jLz"/>
                             <constraint firstItem="hqc-yi-LZ2" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="Jxy-Dq-mcK"/>
-                            <constraint firstItem="3go-mc-vjJ" firstAttribute="leading" secondItem="hqc-yi-LZ2" secondAttribute="trailing" constant="1" id="UWp-8E-b6z"/>
                             <constraint firstAttribute="trailing" secondItem="3go-mc-vjJ" secondAttribute="trailing" id="VnO-EG-SWa"/>
+                            <constraint firstItem="3go-mc-vjJ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="160" id="gXh-wd-55c"/>
                             <constraint firstAttribute="bottom" secondItem="3go-mc-vjJ" secondAttribute="bottom" id="ihR-JQ-CO1"/>
                             <constraint firstAttribute="bottom" secondItem="oSe-es-Nx7" secondAttribute="bottom" constant="-12" id="tfF-Di-Ku2"/>
                             <constraint firstAttribute="bottom" secondItem="hqc-yi-LZ2" secondAttribute="bottom" id="txx-Yg-TID"/>

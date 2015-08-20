@@ -13,19 +13,14 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     @IBOutlet var text: NSTextView!
     @IBOutlet weak var sideBar: NSTableView!
     
+    let managedObjectContext: NSManagedObjectContext! = (NSApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    
     var objects: NSMutableArray! = NSMutableArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         text.editable = false
-        
-        objects.addObject("Team 1")
-        objects.addObject("Team 2")
-        objects.addObject("Team 3")
-        objects.addObject("Team 4")
-        objects.addObject("Team 5")
-        objects.addObject("Team 6")
         
         self.sideBar.reloadData()
     }
@@ -47,7 +42,29 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         if sideBar.selectedRow != -1 {
             let selectedItem = self.objects.objectAtIndex(self.sideBar.selectedRow) as! String
             text.string = selectedItem
+            println(selectedItem)
         }
+    }
+    
+    func updateSideBar() {
+        objects = NSMutableArray()
+        
+        // Create a fetch request
+        let fetchRequest = NSFetchRequest(entityName: "LogEntry")
+        
+        fetchRequest.resultType = .DictionaryResultType
+        fetchRequest.propertiesToFetch = Array(arrayLiteral: "product")
+        
+        // Fetch the results
+        let items = self.managedObjectContext.executeFetchRequest(fetchRequest, error: nil)
+        // Get unique instances and sort
+        let uniqueItems = NSSet(array: items!).sortedArrayUsingDescriptors([NSSortDescriptor(key: "product", ascending: true)])
+        
+        for item in uniqueItems {
+            objects.addObject(item["product"] as! String)
+        }
+        
+        self.sideBar.reloadData()
     }
 
 }
